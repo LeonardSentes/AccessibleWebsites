@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Accessible Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+  <link rel="stylesheet" href="./inaccessible.css">
+</head>
+<body>
+<div class="container">
+  <h1>Inaccessible Website</h1>
+  <div class="accordion js-accordion">
+    <div class="accordion__btn js-accordion__trigger" aria-expanded="false" aria-controls="accordion-1">
+      <div class="ion-plus accordion__icon js-accordion__icon"></div>Text
+    </div>
+    <div class="accordion__content js-accordion__content" id="accordion-1">
+      <h2>Here is the text</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus neque in bibendum maximus. Suspendisse a elit cursus, bibendum lorem non, porta ligula. Ut posuere nulla nisi, ac imperdiet est imperdiet id. Vestibulum eu urna metus. Etiam porttitor placerat nulla nec suscipit. Morbi porttitor ac lacus vel lacinia. Sed consequat, erat sit amet aliquet dictum, mauris enim aliquam est, nec semper nibh quam vitae ipsum. Donec eget enim malesuada ante posuere feugiat sit amet ultricies lorem.</p>
+    </div>
+  </div>
+  <div class="accordion js-accordion">
+    <div class="accordion__btn js-accordion__trigger" aria-expanded="false" aria-controls="accordion-2">
+      <div class="ion-plus accordion__icon js-accordion__icon"></div>Image
+    </div>
+    <div class="accordion__content js-accordion__content" id="accordion-2">
+      <h2>Here is the image</h2>
+      <div class="bird">
+        <img src="../img/bird.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="accordion js-accordion">
+    <div class="accordion__btn js-accordion__trigger" aria-expanded="false" aria-controls="accordion-3">
+      <div class="ion-plus accordion__icon js-accordion__icon"></div>Link
+    </div>
+    <div class="accordion__content js-accordion__content" id="accordion-3">
+      <h2>Here is the link</h2>
+      <a href="../accessible/accessible.html">Click this</a>
+    </div>
+  </div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src="./inaccessible.js"></script>
+</body>
+</html>
